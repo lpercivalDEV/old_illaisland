@@ -118,10 +118,13 @@ loop()
 
 // Control for click event:
 let projectBlock = document.getElementById("projectBlock");
+let pjShow = document.getElementById("showPjs");
 
 let patienceIsAVirtue = document.getElementById("wait");
-patienceIsAVirtue.addEventListener("click", function(){
-  // alert("Be patient. This is version 1.0. Projects coming soon.");
-	projectBlock.className = "fadein";
+patienceIsAVirtue.addEventListener("click", function() {
+	alert("Be patient. This is version 1.0. More projects coming soon.");
+})
 
+showPjs.addEventListener("click", function(){
+	projectBlock.className = "fadein";
 });
