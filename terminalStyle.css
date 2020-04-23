@@ -3,7 +3,6 @@
 
 body {
   background-color: #000;
-  /* background: linear-gradient(#000d13, #000e19); */
   font-family: 'VT323', monospace;
   padding: 8px;
 }
@@ -269,4 +268,27 @@ span {
   to {
     width: 17em;
   }
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 915px) {
+    body {
+      font-size: 14px;
+      background-color: #000000;
+    }
+
+    #container {
+      width: 100%;
+      margin-top: 100px;
+    }
+
+    #container .fakeMenu, #container .fakeScreen {
+      width: 95%;
+    }
+
+    #container p {
+      width: 0%;
+    }
 }

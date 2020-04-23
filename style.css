@@ -39,19 +39,10 @@ canvas {
 
 #main #tagline{
   color: white;
-  /* text-align: center; */
-  /* height: 60px; */
-  /* position: absolute;
-  left: 210px;
-  top: 135px; */
-  /* text-align: center; */
 }
 
 #main  #tag2{
   display: block;
-  /* position: absolute;
-  left: 165px;
-  top: 158px; */
   margin: 15px;
 }
 
@@ -81,12 +72,10 @@ a:hover {
 }
 
 .sourceLink{
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   font-size: 18px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   z-index: 100;
 }
 
@@ -118,7 +107,6 @@ aside section a {
   display: grid;
   text-align: left;
 }
-
 
 .fadein {
   display: block;
@@ -162,6 +150,10 @@ aside section a {
       font-size: 24px;
     }
 
+    canvas {
+      display: none;
+    }
+
     #main {
         width: 80%;
         position: absolute;
@@ -193,9 +185,19 @@ aside section a {
     }
 
     .sourceLink{
-      margin: 2%;
+      margin-top: 18%;
       font-size: 18px;
-      position: absolute;
-      bottom: 0;
+    }
+
+    .mobileFooter{
+      position: fixed;
+      bottom:0;
+      height: 150px;
+      width: 100%;
+      background-image: url("illa.gif");
+      background-repeat: no-repeat;
+      background-position: bottom ;
+      opacity: 0.7;
+      z-index: -1;
     }
 }
